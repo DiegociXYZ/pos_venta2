@@ -1,11 +1,11 @@
 <?php
-class Views{
-  public function getView($controlador, $vista){
+class Views {
+  public function getView($controlador, $vista)
+  {
     $controlador = get_class($controlador);
-    if ($controlador == "Home"){
+    if($controlador == "Home"){
       $vista = "Views/".$vista.".php";
-    }
-    else {
+    }else {
       $vista = "Views/".$controlador."/".$vista.".php";
     }
     require $vista;

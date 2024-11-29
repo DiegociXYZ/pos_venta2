@@ -1,7 +1,9 @@
 <?php
-class HomeModel{
-	public function __construct(){
-		echo "Conectado";
+class HomeModel {
+	public function __construct()
+	{
+
 	}
 }
+
 ?>
