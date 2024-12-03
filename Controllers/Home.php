@@ -1,7 +1,8 @@
 <?php
-class Home{
+class Home extends Controller{
 	public function index(){
-		echo "Funciona el metodo";
+		//echo "Funciona el metodo";
+		$this->views->getView($this, "index");
 	}
 
 }
